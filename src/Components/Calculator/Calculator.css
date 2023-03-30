@@ -1,0 +1,62 @@
+.cal-container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10rem;
+    align-items: center;
+    position: relative;
+    /* object-fit: contain; */
+    /* background-color: red; */
+    margin:  2rem;
+    color: white;
+}
+.cal-left{
+    font-size: 1.8rem;
+    /* background-color: aqua; */
+    font-weight: bold;
+}
+.input-value{
+    display: flex;
+    cursor: pointer;
+}
+ .input-value>input{
+    
+    background-color: gray;
+    padding: 1rem 2rem;
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.input-value>button{
+    background-color: var(--orange);
+    color: white; 
+}
+.cal-right{
+    /* background-color: green; */
+    
+}
+.cal-right>img{
+    
+    
+    width: 20rem;
+
+}
+@media screen and (max-width:768px){
+    .cal-container{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .cal-left{
+        font-size: x-large;
+
+    }
+    .cal-right>img{
+    
+    
+        width: 15rem;
+    
+    }
+    .input-value{
+        display: flex;
+        flex-direction: column;
+    }
+}
